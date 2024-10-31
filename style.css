@@ -8,32 +8,32 @@ body {
     padding: 20px;
 }
 
+h1 {
+    margin-bottom: 20px;
+}
 
 .board {
     display: grid;
-    grid-template-rows: auto auto auto; /* 上段プレイヤーのピット、空行、下段プレイヤーのピット */
-    grid-template-columns: auto repeat(6, 1fr) auto; /* 左右にストアを配置 */
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto repeat(6, 1fr) auto;
     align-items: center;
     gap: 10px;
 }
 
-/* プレイヤー2（上段）のピット */
 #player2-row {
-    grid-row: 1; /* 1行目 */
+    grid-row: 1;
     grid-column: 2 / span 6;
     display: flex;
     justify-content: space-between;
 }
 
-/* プレイヤー1（下段）のピット */
 #player1-row {
-    grid-row: 3; /* 3行目 */
+    grid-row: 3;
     grid-column: 2 / span 6;
     display: flex;
     justify-content: space-between;
 }
 
-/* 各ピット */
 .pit, .store {
     width: 60px;
     height: 60px;
@@ -42,15 +42,23 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 24px;
-    background-color: #f3f3f3;
     border-radius: 50%;
     cursor: pointer;
+}
+
+/* プレイヤーごとのピットの色 */
+.pit[data-player="1"] {
+    background-color: #a2d5f2; /* プレイヤー1のピットの色 */
+}
+
+.pit[data-player="2"] {
+    background-color: #f5b7b1; /* プレイヤー2のピットの色 */
 }
 
 /* 各プレイヤーのストア */
 #player2-store {
     grid-row: 1 / span 3;
-    grid-column: 1; /* 左側 */
+    grid-column: 1;
     width: 80px;
     height: 80px;
     font-weight: bold;
@@ -59,7 +67,7 @@ body {
 
 #player1-store {
     grid-row: 1 / span 3;
-    grid-column: 8; /* 右側 */
+    grid-column: 8;
     width: 80px;
     height: 80px;
     font-weight: bold;

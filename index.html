@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>まんからゲーム</h1>
+    <div id="turn-display">現在のターン: プレイヤー1</div>
     <div class="board">
         <div class="store" id="player2-store">0</div>
+
         <div class="row" id="player2-row">
-            <!-- プレイヤー2のピット -->
             <div class="pit" data-player="2" data-index="5">4</div>
             <div class="pit" data-player="2" data-index="4">4</div>
             <div class="pit" data-player="2" data-index="3">4</div>
@@ -18,8 +20,8 @@
             <div class="pit" data-player="2" data-index="1">4</div>
             <div class="pit" data-player="2" data-index="0">4</div>
         </div>
+
         <div class="row" id="player1-row">
-            <!-- プレイヤー1のピット -->
             <div class="pit" data-player="1" data-index="0">4</div>
             <div class="pit" data-player="1" data-index="1">4</div>
             <div class="pit" data-player="1" data-index="2">4</div>
@@ -27,7 +29,12 @@
             <div class="pit" data-player="1" data-index="4">4</div>
             <div class="pit" data-player="1" data-index="5">4</div>
         </div>
+
         <div class="store" id="player1-store">0</div>
+    </div>
+    <div id="direction-buttons" style="display: none;">
+        <button id="left-button">左回り</button>
+        <button id="right-button">右回り</button>
     </div>
     <script src="script.js"></script>
 </body>
