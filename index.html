@@ -7,34 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>まんからゲーム</h1>
     <div id="turn-display">現在のターン: プレイヤー1</div>
     <div class="board">
-        <div class="store" id="player2-store">0</div>
-
-        <div class="row" id="player2-row">
-            <div class="pit" data-player="2" data-index="5">4</div>
-            <div class="pit" data-player="2" data-index="4">4</div>
-            <div class="pit" data-player="2" data-index="3">4</div>
-            <div class="pit" data-player="2" data-index="2">4</div>
-            <div class="pit" data-player="2" data-index="1">4</div>
-            <div class="pit" data-player="2" data-index="0">4</div>
-        </div>
-
+        <div id="player1-store" class="store">0</div> <!-- プレイヤー1のストア -->
         <div class="row" id="player1-row">
-            <div class="pit" data-player="1" data-index="0">4</div>
-            <div class="pit" data-player="1" data-index="1">4</div>
-            <div class="pit" data-player="1" data-index="2">4</div>
-            <div class="pit" data-player="1" data-index="3">4</div>
-            <div class="pit" data-player="1" data-index="4">4</div>
-            <div class="pit" data-player="1" data-index="5">4</div>
+            <div id="player1-pit-0" class="pit" data-player="1" data-index="0">4</div>
+            <div id="player1-pit-1" class="pit" data-player="1" data-index="1">4</div>
+            <div id="player1-pit-2" class="pit" data-player="1" data-index="2">4</div>
+            <div id="player1-pit-3" class="pit" data-player="1" data-index="3">4</div>
+            <div id="player1-pit-4" class="pit" data-player="1" data-index="4">4</div>
+            <div id="player1-pit-5" class="pit" data-player="1" data-index="5">4</div>
+        </div>
+        <div id="player2-store" class="store">0</div> <!-- プレイヤー2のストア -->
+        <div class="row" id="player2-row">
+            <div id="player2-pit-0" class="pit" data-player="2" data-index="0">4</div>
+            <div id="player2-pit-1" class="pit" data-player="2" data-index="1">4</div>
+            <div id="player2-pit-2" class="pit" data-player="2" data-index="2">4</div>
+            <div id="player2-pit-3" class="pit" data-player="2" data-index="3">4</div>
+            <div id="player2-pit-4" class="pit" data-player="2" data-index="4">4</div>
+            <div id="player2-pit-5" class="pit" data-player="2" data-index="5">4</div>
         </div>
 
-        <div class="store" id="player1-store">0</div>
     </div>
     <div id="direction-buttons" style="display: none;">
-        <button id="left-button">左回り</button>
-        <button id="right-button">右回り</button>
+        <button id="left-button">←</button>
+        <button id="right-button">⇨</button>
     </div>
     <script src="script.js"></script>
 </body>

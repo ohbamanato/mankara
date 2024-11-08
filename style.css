@@ -8,10 +8,6 @@ body {
     padding: 20px;
 }
 
-h1 {
-    margin-bottom: 20px;
-}
-
 .board {
     display: grid;
     grid-template-rows: auto auto auto;
@@ -72,4 +68,10 @@ h1 {
     height: 80px;
     font-weight: bold;
     background-color: #d1d1d1;
+}
+
+#turn-display {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
 }
