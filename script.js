@@ -95,12 +95,12 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('player1-pit-4'),
             document.getElementById('player1-pit-5'),
             document.getElementById('player1-store'),
-            document.getElementById('player2-pit-5'),
-            document.getElementById('player2-pit-4'),
-            document.getElementById('player2-pit-3'),
-            document.getElementById('player2-pit-2'),
-            document.getElementById('player2-pit-1'),
             document.getElementById('player2-pit-0'),
+            document.getElementById('player2-pit-1'),
+            document.getElementById('player2-pit-2'),
+            document.getElementById('player2-pit-3'),
+            document.getElementById('player2-pit-4'),
+            document.getElementById('player2-pit-5'),
             document.getElementById('player2-store')
         ];
         let currentIndex = allPits.indexOf(pit);
