@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const board = document.querySelector('.board'); // 盤面
     
         if (currentPlayer === 1) {
-            turnDisplay.innerText = `現在のターン: プレイヤー1`;
+            turnDisplay.innerText = `現在のターン: プレイヤー青`;
             turnDisplay.style.color = 'blue'; // プレイヤー1の色を青に
             turnDisplay.style.transform = 'rotate(0deg)'; // 通常表示
     
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
             container.appendChild(directionButtons);
     
         } else if (currentPlayer === 2) {
-            turnDisplay.innerText = `現在のターン: プレイヤー2`;
+            turnDisplay.innerText = `現在のターン: プレイヤー赤`;
             turnDisplay.style.color = 'red'; // プレイヤー2の色を赤に
             turnDisplay.style.transform = 'rotate(180deg)'; // 文字を上下反転
     
